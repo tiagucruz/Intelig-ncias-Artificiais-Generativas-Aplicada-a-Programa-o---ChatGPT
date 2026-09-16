@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memória do Chaves</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="panel">
+      <h1>Memória do Chaves</h1>
+      <p>Combine os personagens do seriado e descubra quem está na vila.</p>
+      <div class="stats">
+        <div>
+          <span class="label">Jogadas</span>
+          <strong id="moves">0</strong>
+        </div>
+        <div>
+          <span class="label">Tempo</span>
+          <strong id="timer">00:00</strong>
+        </div>
+        <button id="reset">Reiniciar vila</button>
+      </div>
+    </header>
+
+    <section class="board" id="board" aria-label="Tabuleiro do jogo da memória"></section>
+
+    <section class="modal" id="modal" aria-live="polite" aria-hidden="true">
+      <div class="modal__content">
+        <h2>Êta! Você venceu como o Chaves!</h2>
+        <p>Foram <span id="final-moves">0</span> jogadas e <span id="final-time">00:00</span> de aventuras.</p>
+        <button id="play-again">Jogar de novo</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
